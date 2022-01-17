@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 var person = {
   firstName: 'Bingle',
   lastName: 'Padilla',
@@ -6,9 +7,9 @@ var person = {
 
 console.log(person);
 
-var firstName = 'Bingle';
+var firsName = 'Bingle';
 var lastName = ' Padilla';
-var fullName = firstName + lastName;
+var fullName = person.firstName + ' ' + person.lastName;
 console.log("The person's name is:", fullName);
 
 person.job = 'Software Engineer';
