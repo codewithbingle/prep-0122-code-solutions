@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Creation</title>
+</head>
+
+<body>
+  <div id="container">
+
+  </div>
+  <script>
+    // Your code here
+    // Task 1
+    document.querySelector('#container');
+    var $container = document.querySelector('#container');
+
+    // Task 2
+    var $heading = document.createElement('h1');
+
+    // Task 3 Creating a text node
+    var sampleContent = document.createTextNode('Hello World!');
+
+    // Task 4 Adding the text node to the newly created div
+    $heading.appendChild(sampleContent);
+
+    // Task 5 Adding the newly created element and its content into the DOM
+    var currentDiv = document.getElementById('$container');
+    document.body.appendChild($heading, currentDiv);
+
+  </script>
+</body>
+
+</html>
